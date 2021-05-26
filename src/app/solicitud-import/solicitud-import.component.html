@@ -1,0 +1,155 @@
+<div class="container-fluid containerForm">
+    <div class="row rowForm">
+        <div class="col-sm-12 containerForm">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-3 jumboText">Requisición Técnica</h1>
+                    <hr class="my-2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="Organizacion">Organización de Base:</label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Nombre de la Organización">
+              </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="GrupoT">Grupo Técnico de Trabajo:</label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Nombre de la Organización">
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="planInversion">Plan:</label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Nombre de la Organización">
+              </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="codInversion">Código de inversión:</label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Nombre de la Organización">
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label for="my-textarea">Acción del Plan:</label>
+                <textarea id="my-textarea" class="form-control" name="" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 entregas">
+        <div class="form-group">
+            <label class="labelFecha" for="fechaS">Fecha de suministro en Obra:</label>
+            <br>
+            <input class="fechaSuminitro" type="date" name="fechaSuministroObra" id="fechaSuministro">
+        </div>
+        </div>
+      
+        <div class="col-sm-4 entregas">
+            <div class="form-group">
+                <label for="lugarEntrega">Lugar de Entrega:</label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Lugar de entrega">
+              </div> 
+        </div>
+        <div class="col-sm-4 entregas">
+            <div class="form-group">
+                <label for="inputCantEntregas">Cantidad de Entregas</label>
+                <select class="form-control custom-select">
+                  <option selected="" disabled="">Seleccione</option>
+                  <option>Entregas parciales</option>
+                  <option>Una entrega</option>
+                </select>
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label for="my-textarea">Objeto de Obra:</label>
+                <textarea id="my-textarea" class="form-control" name="" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+            <label for="inputInstalacion">Instalación</label>
+            <select class="form-control custom-select">
+              <option selected="" disabled="">Seleccione</option>
+              <option>Instalación 1</option>
+              <option>Instalación 2</option>
+              <option>Instalación 3</option>
+            </select>
+          </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+            <label for="inputEspecialidad">Especialidad</label>
+            <select class="form-control custom-select">
+              <option selected="" disabled="">Seleccione</option>
+              <option>Corrientes débiles</option>
+              <option>Electricidad</option>
+              <option>Hidráulica</option>    
+              <option>Mecánica</option>
+            </select>
+          </div>
+      </div>
+  </div>  
+  
+  <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+            <label for="inputTipoPago">Tipo de Pago</label>
+            <select class="form-control custom-select">
+              <option selected="" disabled="">Seleccione</option>
+              <option>Por reposición</option>
+              <option>Por reparación</option>
+              <option>Por inversiones</option>    
+              <option>Por operaciones corrientes</option>
+              <option>Otros</option>
+            </select>
+          </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+            <label for="inputFinanciamiento">Financiamiento</label>
+            <select class="form-control custom-select">
+              <option selected="" disabled="">Seleccione</option>
+              <option>Fondos propios</option>
+              <option>Líneas de crédito</option>
+              <option>Bancarias</option>    
+              <option>Comerciales</option>
+            </select>
+          </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="form-group">
+            <label for="linea">Línea:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Nombre de la Organización">
+          </div>   
+    </div>
+  </div>
+
+  <app-presupuesto-lim-asig></app-presupuesto-lim-asig>
+
+  <div class="row">
+    <div class="col-sm-10"></div>
+
+      <div class="col-sm-1">
+        <button type="button" class="btn btn-light btnImprimir">Imprimir</button>
+      </div>
+      
+      <div class="col-sm-1">
+        <button type="submit" class="btn btn-info">Guardar</button>
+      </div>
+  </div>
+</div>

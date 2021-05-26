@@ -1,0 +1,237 @@
+.login-page{
+  align-items: center;
+  background: #e9ecef;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+@media (max-width:206px){
+  .login-box, .register-box {
+    margin-top: .5rem;
+    width: 90%;
+  }
+}
+
+.login-logo{
+  font-size: 2.1rem;
+  font-weight:300;
+  margin-bottom: .9rem;
+  text-align: center;
+
+  a{
+    color: #495057;
+  }
+}
+
+a{
+  text-decoration: none;
+  background-color: transparent;
+}
+
+b,strong{
+  font-weight: bolder;
+}
+
+.card{
+  box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.login-card-body{
+  background: #fff;
+  border-top: 0px;
+  color: #666;
+  padding: 20px;
+}
+
+.card-body{
+  flex: 1 1 auto;
+  min-height: 1px;
+}
+
+.login-box-msg{
+  margin: 0px;
+  padding: 0 20px 20px;
+  text-align: center;
+}
+
+.mb-3{
+  margin-bottom: 1rem!important;
+}
+
+.login-card-body .input-group .form-control, .register-card-body .input-group .form-control {
+  border-right: 0;
+}
+
+
+
+.input-group-append, .input-group-prepend {
+  display: flex;
+}
+
+.login-card-body .input-group .input-group-text, .register-card-body .input-group .input-group-text {
+  background-color: transparent;
+  border-bottom-right-radius: .25rem;
+  border-left: 0;
+  border-top-right-radius: .25rem;
+  color: #777;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+
+.col-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+[class*=icheck-] {
+  min-height: 22px;
+  margin-top: 6px!important;
+  margin-bottom: 6px!important;
+  padding-left: 0;
+}
+
+[class*=icheck-]>input:first-child {
+  position: absolute!important;
+  margin: 1.5px;
+
+  
+  
+}
+
+.checkboxUno{
+  width: 19.5px;
+  height: 19.5px;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+label:not(.form-check-label):not(.custom-file-label) {
+  font-weight: 700;
+}
+
+[class*=icheck-]>label {
+  padding-left: 29px!important;
+  min-height: 22px;
+  line-height: 22px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.icheck-primary>input:first-child:not(:checked):not(:disabled):hover+input[type=hidden]+label::before, .icheck-primary>input:first-child:not(:checked):not(:disabled):hover+label::before {
+  border-color: #007bff;
+}
+
+[class*=icheck-]>input:first-child:not(:checked):not(:disabled):hover+input[type=hidden]+label::before, [class*=icheck-]>input:first-child:not(:checked):not(:disabled):hover+label::before {
+  border-width: 2px;
+}
+
+[class*=icheck-]>input:first-child+input[type=hidden]+label::before, [class*=icheck-]>input:first-child+label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #D3CFC8;
+  border-radius: 0;
+  margin-left: -29px;
+}
+
+.col-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+}
+
+.mb-1, .my-1 {
+  margin-bottom: .25rem!important;
+}
+
+p{
+  margin-top: 0;
+}
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.mb-0, .my-0 {
+  margin-bottom: 0!important;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.card-body::after, .card-footer::after, .card-header::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.imagenEmail{
+ max-width: 20px;
+ max-height: 20px;
+}

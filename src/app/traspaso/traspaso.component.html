@@ -1,0 +1,109 @@
+<div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h3 class="display-4 jumboT">Traspaso</h3>
+            <hr class="my-2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8"></div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label class="labelFecha" for="fechaS">Matanzas,</label>
+                <input class="fechaSuminitro" type="date" name="fechaTraspaso" id="fechaTraspaso">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="A">A:</label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+              </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="De">De:</label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+              </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label for="my-textarea">Asunto:</label>
+                <textarea id="my-textarea" class="form-control" name="" rows="2"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="inputAlmOrigen">Almacén de Origen</label>
+                <select class="form-control custom-select">
+                  <option selected="" disabled="">Seleccione</option>
+                  <option>Almacén 1</option>
+                  <option>Almacén 2</option>
+                  <option>Almacén 3</option>
+                </select>
+              </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="inputAlmOrigen">Almacén de Destino</label>
+                <select class="form-control custom-select">
+                  <option selected="" disabled="">Seleccione</option>
+                  <option>Almacén 1</option>
+                  <option>Almacén 2</option>
+                  <option>Almacén 3</option>
+                </select>
+              </div>
+        </div>
+    </div>
+    <app-tabla-producto-t></app-tabla-producto-t>
+
+<div class="d-flex flex-row firmas">
+    <div class="campoFirma" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+        <div class="form-group">
+            <label for="Solicitado">Solicitado por:</label>
+            <input type="text" class="form-control" name="solicitadoPor" id="solicitadoPor" aria-describedby="helpId" placeholder="">
+          </div>  
+    </div>
+    <div class="campoFirma" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx"> 
+          <div class="form-group">
+            <label for="Aprobado">Aprobado por:</label>
+            <input type="text" class="form-control" name="aprobadoPor" id="aprobadoPor" aria-describedby="helpId" placeholder="">
+          </div> 
+    </div>
+</div>
+
+<div class="d-flex flex-row firmas">
+    <div class="campoFirma" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+        <div class="form-group">
+            <label for="Solicitado">Visto bueno por:</label>
+            <input type="text" class="form-control" name="solicitadoPor" id="solicitadoPor" aria-describedby="helpId" placeholder="">
+          </div>  
+    </div>
+    <div class="campoFirma" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx"> 
+          <div class="form-group">
+            <label for="Aprobado">Aprobado por:</label>
+            <input type="text" class="form-control" name="aprobadoPor" id="aprobadoPor" aria-describedby="helpId" placeholder="">
+          </div> 
+    </div>
+</div>
+
+    <div class="d-flex flex-row-reverse">
+        <div class="botones" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+            <button type="button" value="Imprimir" class="btn btn-secondary" (click)="print()">Imprimir</button>
+        </div>
+        <div class="botones" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+            <button type="button" class="btn btn-info">Guardar</button>
+        </div>
+    </div>
+</div>
+

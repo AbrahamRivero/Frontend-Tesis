@@ -1,0 +1,39 @@
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
+.fechaSuminitro{
+    min-width: 310px;
+    min-height: 38px;
+    width: -webkit-fill-available;
+}
+
+.btnImprimir{
+   background: #d3d6d8; 
+}
+
+.row{
+ margin: 10px;
+ margin-left: 0 !important;
+ margin-right: 0 !important;   
+}
+
+.jumboText{
+    text-align: center;
+}
+
+.containerForm{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.rowForm{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.fecha{
+    width: 310px;
+    height: 38px;
+}

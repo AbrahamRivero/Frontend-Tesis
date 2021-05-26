@@ -1,0 +1,88 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <div class="p-3 bg-white">
+      <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+        <img class="bi me-2" width="148" height="60" src="assets/images/icons/logo.svg" alt="">
+      </a>
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <mat-accordion btn btn-toggle align-items-center rounded collapsed>
+            <mat-expansion-panel hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                <img class="" src="assets/images/icons/icons8-casa.svg" alt="Home">
+                  Inicio
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded">Quiénes somos</a></li>
+                    <li><a href="#" class="link-dark rounded">Qué hacemos</a></li>
+                    <li><a href="#" class="link-dark rounded">Contáctenos</a></li>
+                  </ul>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </li>
+        <li class="mb-1">
+          <mat-accordion btn btn-toggle align-items-center rounded collapsed>
+            <mat-expansion-panel hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Dashboard
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded">Overview</a></li>
+                    <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                    <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                    <li><a href="#" class="link-dark rounded">Annually</a></li>
+                  </ul>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </li>
+        <li class="mb-1">
+          <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+              <img class="" src="assets/images/icons/icons8-marcapáginas.svg" alt="Operaciones">
+                Operaciones
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a routerLink="/dictamenTecn" class="link-dark rounded">Dictamen</a></li>
+                  <li><a routerLink="/sol_importacion" class="link-dark rounded">Solicitud de Importación</a></li>
+                  <li><a routerLink="/sol_materiales" class="link-dark rounded">Solicitud de Materiales</a></li>
+                  <li><a routerLink="/traspaso" class="link-dark rounded">Traspaso</a></li>
+                </ul>
+          </mat-expansion-panel>
+        </li>
+        <li class="border-top my-3"></li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="true">
+            Account
+          </button>
+          <div class="collapse show" id="account-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-dark rounded">New...</a></li>
+              <li><a href="#" class="link-dark rounded">Profile</a></li>
+              <li><a href="#" class="link-dark rounded">Settings</a></li>
+              <li><a href="#" class="link-dark rounded">Sign out</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    
+    </div>
+    
+    <!--<p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>-->
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div>
+
+</mat-drawer-container>

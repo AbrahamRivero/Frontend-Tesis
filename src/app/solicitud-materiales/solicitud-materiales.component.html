@@ -1,0 +1,122 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h2 class="display-3 jumboT">Solicitud de Materiales</h2>
+        <hr class="my-2">
+    </div>
+</div>
+
+<div class="d-flex flex-row">
+    <div class="camposData" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+        <div class="form-group">
+            <label for="inputAlmacenOrigen">Almacén de Origen</label>
+            <select class="form-control custom-select">
+              <option selected="" disabled="">Seleccione</option>
+              <option>Almacén 1</option>
+              <option>Almacén 2</option>   
+              <option>Almacén 3</option>  
+            </select>
+          </div>
+    </div>
+
+    <div class="camposData" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+        <div class="form-group">
+            <label for="inputCliente">Cliente</label>
+            <select class="form-control custom-select">
+              <option selected="" disabled="">Seleccione</option>
+              <option>Grupo Técnico #7</option>
+              <option>Grupo Técnico #8</option>    
+            </select>
+          </div>
+    </div>
+
+    <div class="camposData" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+        <div class="form-group">
+            <label for="inputCliente">Destino</label>
+            <select class="form-control custom-select">
+              <option selected="" disabled="">Seleccione</option>
+              <option>Instalación 1</option>
+              <option>Instalación 2</option>    
+            </select>
+          </div>
+    </div>
+</div>
+
+<div class="d-flex flex-row">
+    <div class="camposData" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+        <div class="form-group">
+            <label for="No-contrato">No. Contrato:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+    </div>
+
+    <div class="camposData" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+        <div class="form-group">
+            <label for="Obj-Contrato">Objeto de Contrato:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+    </div>
+</div>
+
+<div class="d-flex flex-row">
+   <div class="camposData" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+    <div class="form-group">
+        <label for="Aprobado">Fecha en la que se solicita la entrega del suministro en su destino:</label>
+        <input class="fechaSolicitud" type="date" name="fechaSolicitud" id="fechaSol">
+      </div> 
+   </div> 
+</div>
+
+<app-tabla-producto-m></app-tabla-producto-m>
+
+<div class="d-flex flex-row firmas">
+    <div class="campoFirma" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+        <div class="form-group">
+            <label for="Solicitado">Solicitado por:</label>
+            <input type="text" class="form-control" name="solicitadoPor" id="solicitadoPor" aria-describedby="helpId" placeholder="">
+
+            <label for="Solicitado">Cargo:</label>
+            <input type="text" class="form-control" name="solicitadoPor" id="solicitadoPor" aria-describedby="helpId" placeholder="">
+
+            <label for="Solicitado">Firma y Cuño:</label>
+            <input type="text" class="form-control" name="solicitadoPor" id="solicitadoPor" aria-describedby="helpId" placeholder="">
+          </div>  
+    </div>
+    <div class="campoFirma" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx"> 
+          <div class="form-group">
+            <label for="Aprobado">Fecha de Solicitud:</label>
+            <br>
+            <input class="fechaSolicitud" type="date" name="fechaSolicitud" id="fechaSol">
+          </div> 
+    </div>
+</div>
+
+<div class="d-flex flex-row firmas">
+    <div class="campoFirma" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+        <div class="form-group">
+            <label for="Solicitado">Aprobado por:</label>
+            <input type="text" class="form-control" name="solicitadoPor" id="solicitadoPor" aria-describedby="helpId" placeholder="">
+
+            <label for="Solicitado">Cargo:</label>
+            <input type="text" class="form-control" name="solicitadoPor" id="solicitadoPor" aria-describedby="helpId" placeholder="">
+
+            <label for="Solicitado">Firma y Cuño:</label>
+            <input type="text" class="form-control" name="solicitadoPor" id="solicitadoPor" aria-describedby="helpId" placeholder="">
+          </div>  
+    </div>
+    <div class="campoFirma" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx"> 
+          <div class="form-group">
+            <label for="Aprobado">Fecha de Aprobación:</label>
+            <br>
+            <input class="fechaAprobacion" type="date" name="fechaAprobacion" id="fechaAp">
+          </div> 
+    </div>
+</div>
+
+    <div class="d-flex flex-row-reverse">
+        <div class="botones" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+            <button type="button" class="btn btn-secondary">Imprimir</button>
+        </div>
+        <div class="botones" fxLayout="column" fxLayoutAlign="|start,center,end,space-around,space-between| |start,center,end,stretch|" fxLayoutGap="gappx">
+            <button type="button" class="btn btn-info">Guardar</button>
+        </div>
+    </div>

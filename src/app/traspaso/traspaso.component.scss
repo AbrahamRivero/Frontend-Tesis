@@ -1,0 +1,29 @@
+.jumboT{
+    text-align: center;
+}
+
+.row{
+margin: 0;
+margin-bottom: 10px !important;
+}
+
+.flex-row{
+    margin: 0;
+}
+
+.botones{
+    margin: 10px;
+}
+
+.firmas{
+    justify-content:space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+}
+
+.campoFirma{
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-basis: 160px;
+    flex-grow: 1;
+}

@@ -1,0 +1,53 @@
+<div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3 prueba">Dictamen Técnico</h1>
+            <hr class="my-2">
+        </div>
+    </div>
+
+    <div class="row dictamen">
+
+        <div class="col-sm-4 dictamenR">
+          <div class="form-group">
+            <label for="inputNumSolicitud">No. Solicitud</label>
+            <select class="form-control custom-select">
+              <option selected="" disabled="">Seleccione</option>
+              <option>Solicitud 1</option>
+              <option>Solicitud 2</option>
+              <option>Solicitud 3</option>    
+            </select>
+          </div>
+        </div>
+
+        <div class="col-sm-4 dictamenR"> 
+          <div class="form-group">
+            <label for="inputNumOferta">No. Oferta</label>
+            <select class="form-control custom-select">
+              <option selected="" disabled="">Seleccione</option>
+              <option>Oferta 1</option>
+              <option>Oferta 2</option>
+              <option>Oferta 3</option>    
+            </select>
+          </div>
+        </div>
+       
+
+        <div class="col-sm-4">
+            <p class="ofertaDictamen">Oferta de Suministros</p>
+        </div>
+    </div>
+
+    <app-analisis-oferta></app-analisis-oferta>
+    
+    <div class="row botones">
+        <div class="col-sm-10"></div>
+        <div class="col-sm-1">
+            <button type="button" class="btn btn-light colorBtn">Aceptar</button>
+        </div>
+        <div class="col-sm-1">
+          <button type="button" class="btn btn-info">Finalizar</button>
+        </div>
+      </div>
+
+</div>
